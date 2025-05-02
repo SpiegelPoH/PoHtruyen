@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hành Trình Huyền Bí</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+    }
+
+    /* Ảnh nền */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('https://i.pinimg.com/736x/d5/29/e6/d529e6f88c336a63a5121919d6dc76dd.jpg'); /* Đổi ảnh tại đây */
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+
+    /* Lớp phủ điều chỉnh sáng/mờ */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* chỉnh tối ở đây */
+      backdrop-filter: blur(-1px) brightness(1.8); /* chỉnh mờ và sáng */
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: #ccc;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>Hành Trình Huyền Bí</h1>
+    <h2>Tác giả: Tác Giả A</h2>
+
+    <p>Chọn chương để đọc:</p>
+    <ul>
+      <li><a href="stories/chapter1.html">Chương 1: Khởi nguồn chiến tranh</a></li>
+      <li><a href="stories/chapter2.html">Chương 2: Lần đầu gặp mặt - Phụ Thân</a></li>
+      <li><a href="stories/chapter3.html">Chương 3: Chị gái song sinh</a></li>
+      <li><a href="stories/chapter1.html">Chương 4: Trận pháp tan vỡ - Linh hồn giải thoát</a></li>
+      <li><a href="stories/chapter1.html">Chương 5: Thành viên mới</a></li>
+      <li><a href="stories/chapter1.html">Chương 6: Đón khách quý</a></li>
+    </ul>
+
+    <footer>
+      &copy; 2025 Tác Giả A. Truyện được chia sẻ miễn phí.
+    </footer>
+  </div>
+</body>
+</html>
