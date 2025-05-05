@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chương 3: Chị gái song sinh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Chương 3: Chị Gái Song Sinh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cinzel&family=Great+Vibes&family=EB+Garamond&family=Courgette&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Playfair Display', serif;
@@ -18,9 +18,9 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 100vh;
       width: 100%;
-      background-image: url('https://i.pinimg.com/736x/f9/3a/6d/f93a6d02792607c4384048a00aafb42f.jpg'); /* Đổi ảnh tại đây */
+      background-image: url('https://i.pinimg.com/736x/4a/db/57/4adb572c9108ad18a78e26e596da18cb.jpg'); /* Đổi ảnh tại đây */
       background-size: cover;
       background-position: center;
       z-index: -2;
@@ -31,10 +31,10 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 100vh;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.2); /* chỉnh tối ở đây */
-      backdrop-filter: blur(1px) brightness(1.8); /* chỉnh mờ và sáng */
+      background-color: rgba(0, 0, 0, 0.3); /* chỉnh tối ở đây */
+      backdrop-filter: blur(1px) brightness(0.8); /* chỉnh mờ và sáng */
       z-index: -1;
     }
     .container {
@@ -44,13 +44,48 @@
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 12px;
     }
+.chapter-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.chapter-navigation a {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chapter-navigation a:hover {
+  background-color: #b8680b;
+  transform: scale(1.05);
+}
     h1 {
-      font-size: 2.5em;
-      text-align: center;
+      font-family: 'Cinzel', serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #c9a939;
     }
     p {
-      font-size: 1.2em;
-      line-height: 1.6;
+      font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 40px auto;
+  max-width: 800px;
+  color: #f1f1f1;
+  text-align: justify;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
     }
     a {
       color: #ffd700;
@@ -60,7 +95,7 @@
       text-align: center;
       font-size: 0.9em;
       margin-top: 20px;
-      color: #aaa;
+      color: #c9a939;
     }
   </style>
 </head>
@@ -68,9 +103,9 @@
 <div class="background"></div>
   <div class="overlay"></div>
   <div class="container">
-    <h1>Chương 3: Chị gái song sinh</h1>
+    <h1>Chương 3: Chị Gái Song Sinh</h1>
     <p>
-Đêm. Mưa như trút, sấm sét chằng chịt trên bầu trời đen đặc. Cung điện Huyết tộc chìm trong bóng tối, chỉ ánh lên ánh sáng mờ nhạt từ những viên đá phát quang.<br>
+Đêm mưa như trút, sấm sét chằng chịt trên bầu trời đen đặc. Cung điện Huyết tộc chìm trong bóng tối, chỉ ánh lên ánh sáng mờ nhạt từ những viên đá phát quang.<br>
 Một bóng người lao từ bầu trời xuống, áo choàng đen thẫm bọc gió, mái tóc vàng rối bời, ướt đẫm mưa. Trong vòng tay ông – một hình hài nhỏ bé, cuộn trong tấm vải nhạt màu.<br>
 Cửa sổ phòng Yue – nơi cô đang ngủ – đột ngột nổ tung. Mảnh kính vỡ rơi lả tả. Một bóng đen đâm xuyên qua kết giới, đáp xuống nền đá, hơi thở dồn dập, máu loang trên mặt đất.<br>
 Bị đánh thức khỏi giấc ngủ, Yue bật dậy. Mắt đỏ lập tức ánh lên như hồng ngọc dưới ánh chớp. Tay vung mạnh – nhẹ nhàng triệu hồ vũ khĩ, một lưỡi hãi máu. Lưỡi hái bóng loáng kéo theo âm thanh rít gió rợn người.<br>
@@ -88,11 +123,15 @@ Eryndor cúi đầu, giọng khàn đặc, như kẻ mang tội nặng nề:<br>
 Lilth siết bàn tay nhỏ bé ấy, đôi mắt đỏ dần tối lại, nước mắt hoà lẫn mưa rơi xuống gương mặt vô hồn của Lyrielle.<br>
 Yue đứng phía sau, lưỡi hái buông chùng xuống sàn, im lặng nhìn mẹ, cha, và đứa trẻ xa lạ kia trong lòng không khỏi bối rối.<br>
 Ngoài kia, tiếng binh lính Thần tộc đụng độ vệ binh Huyết tộc vang vọng, trận chiến manh nha dưới bầu trời tăm tối. Nhưng trong căn phòng ấy, ba linh hồn chỉ còn lại sự bất lực… và một mảnh tình rạn vỡ.
-    </p>
-    <p><a href="index.html">Quay lại trang chủ</a></p>
 
+    </p>
+   <div class="chapter-navigation">
+  <a href="chap02.html">⬅️ Chương trước</a>
+  <a href="../index.html">🏠 Trang chủ</a>
+  <a href="chap04.html">➡️ Chương tiếp theo</a>
+   </div>
     <footer>
-      &copy; 2025 Tác Giả A. Truyện được chia sẻ miễn phí.
+      &copy; 2025 Tác Giả Hoàng Nguyệt Ly. Truyện được chia sẻ miễn phí.
     </footer>
   </div>
 </body>
