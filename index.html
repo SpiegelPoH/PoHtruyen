@@ -2,121 +2,193 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PoHtruyen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cinzel&family=Great+Vibes&family=EB+Garamond&family=Courgette&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twilight Over the Crown</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Great+Vibes&family=Cormorant+Garamond&display=swap" rel="stylesheet">
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
     body {
-      font-family: 'Playfair Display', serif;
-      color: #fff;
-    }
-
-    /* Ảnh nền */
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-image: url('https://i.pinimg.com/736x/d5/29/e6/d529e6f88c336a63a5121919d6dc76dd.jpg'); /* Đổi ảnh tại đây */
+      margin: 0;
+      background-image: url('https://i.pinimg.com/736x/e5/16/e6/e516e6c122a0d97477cca4fc4023c0e4.jpg');
       background-size: cover;
       background-position: center;
-      z-index: -2;
+      background-repeat: no-repeat;
+      font-family: 'Cormorant Garamond', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #2e1b1b;
+      flex-direction: column; /* Thêm để bố trí phần footer dưới cùng */
     }
 
-    /* Lớp phủ điều chỉnh sáng/mờ */
-    .overlay {
-      position: fixed;
+    .book-cover {
+      padding: 3rem 2rem;
+      max-width: 600px;
+      text-align: center;
+      border-radius: 16px;
+      border: 2px solid #fff5d6;
+      background-image: url('background-pattern.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      position: relative;
+      z-index: 1; /* Thêm z-index để đảm bảo lớp book-cover không bị che khuất */
+    }
+
+    .book-cover::before {
+      content: '';
+      position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* chỉnh tối ở đây */
-      backdrop-filter: blur(-1px) brightness(1.8); /* chỉnh mờ và sáng */
-      z-index: -1;
+      right: 0;
+      bottom: 0;
+      background-image: url('fog-pattern.png');
+      opacity: 0.3;
+      backdrop-filter: blur(10px);
+      z-index: -1; /* Đặt lớp này phía sau lớp chính */
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h1 {
-  font-family: 'Crimson Text', serif;
-  font-size: 36px;
-  text-align: center;
-  margin-top: 30px;
-  color: #c9a939;
+    .title {
+      font-family: 'Cinzel', serif;
+      font-size: 4rem;
+      color: goldenrod;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 165, 0, 0.8);
+      margin-bottom: 1rem;
+      transition: all 0.3s ease-in-out;
     }
 
-    h2 {
-      font-family: 'Great Vibes', serif;
-      text-align: center;
-      font-size: 1.5em;
-      margin-bottom: 1em;
-      color: #eed8ae;
+    .title:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 165, 0, 1);
     }
 
-    ul {
+    .author {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.8rem;
+      color: #fff4ee;
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: #c6d7c7;
+    }
+
+    .chapter-list {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      z-index: 2; /* Đảm bảo rằng phần này không bị che khuất */
+      position: relative;
+    }
+
+    .chapter-list h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fffbe0;
+    }
+
+    .chapter-list ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
-    li {
-      margin: 10px 0;
-      font-size: 1.2em;
+    .chapter-list li {
+      margin: 0.4rem 0;
     }
 
-    a {
-      color: #ffd755;
+    .chapter-list a {
       text-decoration: none;
-      
-      opacity: 0.7;
-  transition: all 0.4s ease-in-out;
+      color: #fffde0;
+      transition: color 0.7s ease, transform 0.7s ease;
+      display: inline-block;
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: #fff;
-      opacity: 1;
-  color: #FFF8DC; /* Cornsilk - nhẹ nhàng cổ điển */
+    .chapter-list a:hover {
+      color: #ffccdd;
+      transform: scale(1.08);
     }
 
+    @media (max-width: 640px) {
+      .book-cover {
+        padding: 2rem 1rem;
+      }
+
+      .title {
+        font-size: 2.4rem;
+      }
+
+      .author {
+        font-size: 1.5rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
+    }
+
+    /* Footer Style */
     footer {
-      margin-top: 40px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 0.25rem;
       text-align: center;
-      font-size: 0.9em;
-      color: #aaa;
+      position: static;
+      bottom: 0;
+      left: 0;
+    }
+
+    footer p {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="overlay"></div>
+  <div class="book-cover">
+    <h1 class="title">Twilight Over the Crown</h1>
+    <p class="author">Hoàng Nguyệt Ly</p>
+    <p class="intro">
+     Giữa màn đêm tĩnh mịch của cõi Huyết Nguyệt, một sinh linh chào đời – mang theo ánh sáng mong manh của hy vọng và bóng tối sâu thẳm của bi kịch. Là kết tinh của một mối tình cấm kỵ giữa Nữ vương Huyết tộc và Bá tước Thần tộc, cô chưa kịp cảm nhận hơi ấm mẹ cha đã bị cuốn vào dòng xoáy định mệnh. Bị buộc rời xa mẫu thân, lớn lên giữa chiến loạn và âm mưu triều đình, cô không chỉ học cách trở thành một công chúa – mà còn là người thừa kế số mệnh bị chia cắt. Khi bí mật dần lộ sáng, thân phận thật sự bị phơi bày, cô phải đối mặt với sự phản bội, mất mát và hận thù... Để rồi, giữa cuộc chiến định đoạt vận mệnh chư tộc, một lần nữa máu sẽ đổ dưới vầng trăng đỏ rực... và nàng, Huyết Nguyệt công chúa, sẽ viết nên chương cuối của một bi sử nhuốm máu và nước mắt.
+    </p>
 
-  <div class="container">
-    <h1>Chưa Biết</h1>
-    <h2>Tác giả: Hoàng Nguyệt Ly</h2>
-
-    <p>Chọn chương để đọc:</p>
-    <ul>
-      <li><a href="chapter/chap01.html">Chương 1: Khởi Nguồn Chiến Tranh</a></li>
-      <li><a href="chapter/chap02.html">Chương 2: Lần Đầu Gặp Mặt - Phụ Thân</a></li>
-      <li><a href="chapter/chap03.html">Chương 3: Chị Gái Song Sinh</a></li>
-      <li><a href="chapter/chap04.html">Chương 4: Trận Pháp Tan Vỡ - Linh Hồn Giải Thoát</a></li>
-      <li><a href="chapter/chap05.html">Chương 5: Thành Viên Mới</a></li>
-      <li><a href="chapter/chap06.html">Chương 6: Đón Khách Quý</a></li>
-    </ul>
-
-    <footer>
-      &copy; 2025 Tác giả Hoàng Nguyệt Ly. Truyện được chia sẻ miễn phí.
-    </footer>
+    <div class="chapter-list">
+      <h2>Mục lục</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <ul style="flex: 1; min-width: 200px; list-style: none; padding: 0;">
+          <li><a href="chapter/chapter01.html">Chương 1: Lần Đầu Gặp Mặt - Phụ Thân</a></li>
+          <li><a href="chapter/chapter02.html">Chương 2: Chị Gái Song Sinh</a></li>
+          <li><a href="chapter/chapter03.html">Chương 3: Khởi Nguồn Chiến Tranh</a></li>
+          <li><a href="chapter/chapter04.html">Chương 4: Trận Pháp Tan Vỡ - Linh Hồn Giải Thoát</a></li>
+          <li><a href="chapter/chapter05.html">Chương 5: Vết cắt vận mệnh</a></li>
+          <li><a href="chapter/chapter06.html">Chương 6: Thành Viên Mới</a></li>
+        </ul>
+        <ul style="flex: 1; min-width: 200px; list-style: none; padding: 0;">
+          <li><a href="chapter/chapter07.html">Chương 7: Đón Khách Quý</a></li>
+          <li><a href="chapter/chapter08.html">Chương 8: Lễ Vật</a></li>
+          <li><a href="chapter/chapter09.html">Chương 9: Quái Vật</a></li>
+          <li><a href="chapter/chapter10.html">Chương 10: Mối Tình Đầu</a></li>
+          <li><a href="chapter/chapter11.html">Chương 11: Lau Dọn</a></li>
+          <li><a href="chapter/chapter12.html">Chương 12: Ngoại Lệ</a></li>
+          <li><a href="chapter/chapter13.html">Chương 13: Chỉ Cần Em Muốn</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <!-- Footer -->
+  <footer>
+  <p>© 2025 Hoàng Nguyệt Ly. All rights reserved.</p>
+</footer>
 </body>
 </html>

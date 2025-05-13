@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chương 7: Lễ Vật</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cinzel&family=Great+Vibes&family=EB+Garamond&family=Courgette&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    /* Ảnh nền */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-image: url('https://i.pinimg.com/736x/db/2b/77/db2b77640b5e0731b0f383999798df54.jpg'); /* Đổi ảnh tại đây */
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+
+    /* Lớp phủ điều chỉnh sáng/mờ */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2); /* chỉnh tối ở đây */
+      backdrop-filter: blur(1px) brightness(1.8); /* chỉnh mờ và sáng */
+      z-index: -1;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+.chapter-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.chapter-navigation a {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chapter-navigation a:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+    h1 {
+      font-family: 'Cinzel', serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #c9a939;
+    }
+    p {
+      font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 40px auto;
+  max-width: 800px;
+  color: #f1f1f1;
+  text-align: justify;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+    }
+    a {
+      color: #f7c7de;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 20px;
+      color: #c9a939;
+    }
+  </style>
+</head>
+<body>
+<div class="background"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Chương 7: Lễ vật</h1>
+    <p>
+Cung điện Celestora chìm trong ánh sáng ngọc lưu ly, tiếng đàn thần ngân vang, từng bậc đá trắng rắc cánh hoa tinh linh mỏng như sương. Đêm nay, Thần tộc mừng đại thọ ba thế kỷ của Thái hậu Seraphine Elyastra Aurelthane – biểu tượng quyền uy bất khả xâm phạm suốt ba thế hệ.<br>
+Bà ngồi trên ngai bạc, mái tóc vàng kim được búi gọn gàng trông thất quyền lực, đôi mắt vàng lạnh lẽo quét khắp đại điện. Bên dưới, chư tướng, quý tộc, vương tử, vương nữ nâng chén chúc tụng, cười nói, mưu đồ ẩn sau từng nụ cười.<br>
+Khi điệu nhạc đến cao trào, cửa điện chợt mở.<br>
+Một đoàn người áo choàng đỏ tiến vào, bước đều tĩnh lặng như bóng. Dẫn đầu là một sứ giả tóc trắng, gương mặt u tối, tay cầm một hộp gỗ đen phủ phù văn.<br>
+Theo sau hắn là hàng chục “người” khác – mỗi kẻ khiêng một hộp gỗ, lặng lẽ, không thở, không giao tiếp.<br>
+Tiệc rơi vào im lặng.<br>
+Một quý tộc Thần tộc cao giọng:<br>
+“Là ai dám xông vào Thần điện giữa lễ thọ?”<br>
+Tên sứ giả cúi đầu, giọng mềm như gió đông:<br>
+“Ta thay mặt Yue Vaemira Crimsonveil – Thái Nữ Huyết Linh tộc – mang quà mừng thọ Thái hậu.”<br>
+“…Yue?” – Thái hậu nhíu mày, giọng trầm hẳn. “Đứa con hoang ấy? Có tư cách?”
+Sứ giả khẽ cười, nụ cười đến rợn người.<br>
+Hắn phất tay. Một “người” tiến lên, đặt hộp gỗ đầu tiên lên bàn.<br>
+“Cạch.”<br>
+Nắp bật mở. Một cái đầu người lăn ra, mắt vẫn trợn trừng, môi tím ngắt, cổ còn rỉ máu, trông thật đau đớn.<br>
+Quả nhiên cảnh tượng này được thu gọn vào mắt Thái Hậu, bà ta đứng bật dậy theo bản năng, quân vệ cũng vào trạng thái sẵn sàng chờ lệnh.<br>
+“Đó… là Tướng Caldor…” – một tiếng thét nghẹn vang lên từ bên dưới, bầu không khí lặng ngắt.<br>
+Hộp thứ hai. Thứ ba. Thứ tư...<br>
+Mỗi hộp… một cái đầu.<br>
+“Là đội tiên phong!”<br>
+“Đội phó phương Bắc!”<br>
+“Đây là… tướng phòng thủ Đông trấn…”<br>
+Khắp đại điện tràn tiếng gào kinh hãi.<br>
+Sứ giả lại cúi đầu:<br>
+“Chỉ là… chút lễ vật nhỏ mà Điện hạ bọn ta gửi đến." Nói đến đây, đôi mắt hắn nở một nụ cười khinh bỉ đầy giễu cợt người trên cao kia. " Không biết Thái hậu có hài lòng chẳng?”<br>
+Thái hậu Seraphine kìm mình không run rẩy, gương mặt lạnh như băng vỡ tan thành phẫn nộ:<br>
+“GIẾT! GIẾT HẾT LŨ SÂU BỌ NÀY CHO TA!”<br>
+Một luồng Thần lực bắn xuống đoàn áo đỏ – nổ tung thành tro bụi.<br>
+Nhưng… trong tro bụi ấy, chỉ còn lại gỗ vụn và sợi tơ – bọn chúng chỉ là những con rối.<br>
+Một vị pháp sư hốt hoảng:<br>
+“Không phải người thật… tất cả đều… rối!”<br>
+Làn khói mờ tan biến, một đống hỗn độn, lúc này tên sứ giả kia mới mờ nhạt xuất hiện lại, vẫn nụ cười đó, hắn cúi người nhẹ nhàng hành lễ một cánh quy củ giữa một đống đổ nát. Rồi dần tan biến, giọng nói vọng lại từ không trung. <br>
+" Không làm phiền nhã hứng của các vị, tại hạ xin phép cáo lui trước".<br>
+Seraphine đứng sững, bàn tay siết chặt đến trắng bệch.<br>
+Ánh mắt bà run rẩy – không chỉ vì phẫn nộ, mà còn là một nỗi sợ… điều bà coi thường đã thành hố sâu dưới chân.<br>
+Xa bên kia lục địa, trong tháp cao phủ màn đêm, Yue Vaemira Crimsonveil đứng bên cửa sổ, lặng nhìn bầu trời rực ánh đỏ phương xa. Kaelen Valtor Strathorn nhẹ nhàng đưa cho Yue ly rượu vang. Nhìn màu đỏ như máu của li rượu, mắt thoáng qua ý cười cợt.<br>
+“Có lẽ… họ vừa mở quà,” Kaelen nói, giọng nửa trêu chọc, nửa tán thưởng.
+Yue siết chặt ly rượu đỏ trong tay, ngón tay gầy phủ lên thành thủy tinh, đôi mắt đỏ rượu ánh lên lấp lánh như sao rơi:<br>
+“Ừ. Đêm nay… Thần tộc sẽ không còn ngủ yên.”<br>
+Kaelen nghiêng đầu, bước lại gần, giọng khẽ:<br>
+“Điện hạ… người có hối hận không?”<br>
+Yue khẽ cười, ánh mắt lướt qua Kaelen – vừa dịu dàng, vừa lạnh lẽo như vầng trăng đẫm máu ngoài kia:<br>
+“Ha. Hối hận? Ngươi nghĩ sao?”<br>
+Cô xoay người, bước ra khỏi ban công, bóng áo ngủ trắng hòa vào màn đêm.<br> Kaelen nhìn theo, môi khẽ cong thành một nụ cười phức tạp.<br>
+Ngoài kia, tiếng chuông báo tang vang lên từ Celestora.<br>
+Đêm mừng thọ Thái hậu… hóa đêm tang của cả triều thần.<br>
+
+    </p>
+   <div class="chapter-navigation">
+  <a href="chap06.html">⬅️ Chương trước</a>
+  <a href="../index.html">🏠 Trang chủ</a>
+  <a href="chap07.html">➡️ Chương tiếp theo</a>
+   </div>
+    <footer>
+      &copy; 2025 Tác Giả Hoàng Nguyệt Ly. Truyện được chia sẻ miễn phí.
+    </footer>
+  </div>
+</body>
+</html>
