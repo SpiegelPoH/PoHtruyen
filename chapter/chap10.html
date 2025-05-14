@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chương 10: Lau Dọn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cinzel&family=Great+Vibes&family=EB+Garamond&family=Courgette&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    /* Ảnh nền */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-image: url('https://i.pinimg.com/736x/ed/69/8b/ed698b40f6717e4b1699810ff10ec26e.jpg'); /* Đổi ảnh tại đây */
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+
+    /* Lớp phủ điều chỉnh sáng/mờ */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.1); /* chỉnh tối ở đây */
+      backdrop-filter: blur(1px) brightness(0.8); /* chỉnh mờ và sáng */
+      z-index: -1;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+.chapter-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.chapter-navigation a {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chapter-navigation a:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+    h1 {
+      font-family: 'Cinzel', serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #c9a939;
+    }
+    p {
+      font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 40px auto;
+  max-width: 800px;
+  color: #f1f1f1;
+  text-align: justify;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+    }
+    a {
+      color: #f7c7de;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 20px;
+      color: #c9a939;
+    }
+  </style>
+</head>
+<body>
+<div class="background"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Chương 10: Lau Dọn</h1>
+    <p>
+Tiếng bước chân dồn dập vang lên trong hành lang ngập mùi máu tanh. Khi Kaelen chạy đến, đập vào mắt anh là khung cảnh quen thuộc đến phát chán: những thi thể nằm la liệt, tường trắng loang lổ đỏ, và Yue – đứng giữa bậc thang, váy trắng nhuộm máu, mái tóc bạc xõa xuống vai, như một bóng ma lạc giữa thế gian.<br><br>
+
+Cô nghiêng người, nhẹ nhàng thả thêm một tên thích khách khỏi tay. Tiếng rơi nặng nề vọng lên.<br>
+
+Kaelen tính tiến lên ngăn cản nhưng không kịp, ảnh chỉ còn biết vuốt mái tóc rồi bù của mình lên, thở dài đầy oán trách. Thay vì lo cho cô công chúa kia thì anh lo cho mình hơn.<br><br>
+
+Yue quay đầu nhìn anh, ánh mắt lạnh lùng bỗng như tan chảy, giống như một con cún đang chờ được khen. Cô bước xuống vài bậc, môi mím lại, ngẩng mặt chờ đợi.<br>
+
+Kaelen bất giác bật cười khẽ, trên mặt không giấu được sự phàn nàn, rút khăn tay ra, tiến lại gần. Anh lau vết máu trên má cô, ngón tay dịu dàng lướt qua gò má ấm nóng.<br>
+
+“Có bị thương chỗ nào không?” – anh hỏi, giọng thấp xuống, nhưng chẳng có chút lo lắng nào. Có lẽ anh đủ hiểu cô để biết được câu trả lời.<br><br>
+
+“Không… nhưng mệt quá.” – Yue thì thầm, chớp mắt đôi mắt to tròn nhìn anh, rồi bất ngờ tựa đầu lên vai Kaelen, giọng nhỏ xíu: “…Cũng sợ nữa.”<br><br>
+
+Kaelen thoáng khựng lại, cảm giác bờ vai nho nhỏ ấy run khẽ. Một tiếng thở dài trĩu nặng bật ra từ ngực anh.<br>
+
+“Haizzz.” – anh lẩm bẩm, vòng tay ôm cô thật chặt – “Không phải em bảo không cần ai bảo vệ sao? Giờ lại thế này.”<br><br>
+
+Yue không đáp, chỉ rúc sâu hơn vào lòng anh, đôi tay siết lấy vạt áo anh. Một lúc sau, cô ngẩng lên, ánh mắt long lanh:<br>
+
+“Kaelen… dọn giùm em nhé?”<br><br>
+
+Nghe được câu nói ấy, Kaelen như hoá đá, nhìn đống hỗn độn sau lưng cô, rồi lại nhìn đôi mắt ấy. Anh mím môi cười, một nụ cười khó coi hơn cả khóc.<br>
+
+" Tổ tông ơi tôi mới dọn hết cung điện phía Nam hôm qua cho người mà ." Vừa nói nước mắt anh chảy ròng ròng như oan ức bao lâu kìm nén khiến Yue có chút chột dạ.<br><br>
+
+Với gương mặc đầy bực dọc và ấm ức, Kae trút giận lên đám xác chết đang nằm bất động trên sàn, rồi bắt đầu dọn dẹp mà không khỏi than phiền.<br>
+
+“ Điện hạ lần sau… làm ơn đừng để máu bắn lên rèm cửa nữa. Cái đó khó giặt lắm.”<br><br>
+
+Nhìn xuống tên vừa bị ném, thờ ơ hỏi một câu như mọi khi: “Cái này còn thở. Xử sao?”<br>
+
+“Vườn hoa độc. Để người của anh mang đi.” – Yue đáp, tựa lưng vào lan can, ánh mắt vẫn lười nhác nhưng khóe môi cong cong.<br><br>
+
+Kaelen gật đầu, bước đi, lắc đầu:<br>
+
+“Thật tình… công chúa của ta. Chẳng biết thương hoa tiếc ngọc gì cả.”<br><br>
+
+Dưới ánh đuốc nhạt, bóng hai người đổ dài trên nền đá vương máu – một nàng công chúa mong manh mà tàn nhẫn, một chàng trai luôn lặng lẽ gánh vác mọi thứ phía sau cô.
+    </p>
+   <div class="chapter-navigation">
+  <a href="chap09.html">⬅️ Chương trước</a>
+  <a href="../index.html">🏠 Trang chủ</a>
+  <a href="chap11.html">➡️ Chương tiếp theo</a>
+   </div>
+    <footer>
+      &copy; 2025 Tác Giả Hoàng Nguyệt Ly. Truyện được chia sẻ miễn phí.
+    </footer>
+  </div>
+</body>
+</html>

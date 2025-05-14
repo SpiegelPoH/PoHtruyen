@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chương 13: Máu Và Ngai Vàng</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cinzel&family=Great+Vibes&family=EB+Garamond&family=Courgette&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    /* Ảnh nền */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-image: url('https://i.pinimg.com/736x/cf/6a/12/cf6a123914e7a4f3d21fbb4f1deb90e7.jpg'); /* Đổi ảnh tại đây */
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
+
+    /* Lớp phủ điều chỉnh sáng/mờ */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.1); /* chỉnh tối ở đây */
+      backdrop-filter: blur(1px) brightness(0.8); /* chỉnh mờ và sáng */
+      z-index: -1;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+.chapter-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.chapter-navigation a {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chapter-navigation a:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+    h1 {
+      font-family: 'Cinzel', serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #c9a939;
+    }
+    p {
+      font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 40px auto;
+  max-width: 800px;
+  color: #f1f1f1;
+  text-align: justify;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+    }
+    a {
+      color: #f7c7de;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 20px;
+      color: #c9a939;
+    }
+  </style>
+</head>
+<body>
+<div class="background"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Chương 13: Máu Và Ngai Vàng</h1>
+    <p>
+Đại điện Hội đồng Hoàng tộc rợp ánh lửa đỏ lặng lẽ cháy trong từng lồng đèn treo cao, chiếu lên những bức tượng đá khắc hình các đời Nữ Vương tiền nhiệm – ánh mắt họ như đang soi xét từng linh hồn bước vào đây.<br>
+
+Yue khoác lên mình bộ trang phục đỏ rực như máu, đôi mắt sáng lên như hồng ngọc chìm sâu trong ánh sáng, mang phong thái của một Nữ vương tiến vào. Kaelen theo sau, mang theo cuộn bản đồ chiến sự và tài liệu tình báo, dáng đi trầm ổn mà dứt khoát.<br>
+
+Trên bệ cao, mười hai vị lão tổ và quý tộc cấp cao đã ngồi thành vòng cung, phía trung tâm là chiếc ngai rỗng – ngai dành cho Nữ vương. Lystia đứng cạnh đó, bộ đồng phục kị sĩ bó sát, đôi mắt sắc lạnh quét khắp gian điện như một lời cảnh cáo những kẻ không an phận. Không khí lúc này ảm đạm, lạnh lẽo đến đáng sợ.<br><br>
+
+Một giọng trầm khàn cất lên:<br>
+
+“Điện hạ gọi cuộc họp khẩn. Hy vọng không phải vì một cơn hứng khát máu thường niên của dòng Vaemira.”<br><br>
+
+Yue không mỉm cười, cũng không phản ứng. Cô bước lên ba bậc thang, dừng lại giữa sảnh. Giọng cô vang lên, rành rọt và lạnh buốt như băng đá rơi vào máu sôi:<br>
+
+“Thần tộc đã điều quân. Họ mang kỵ binh và pháp sư chiến đấu đến biên giới Bắc, với danh nghĩa ‘bảo vệ an ninh’. Tôi cần Hội đồng cho phép triển khai quân phòng vệ.”<br><br>
+
+Một nữ quý tộc tóc bạc – Người đại diện Góc Nam, chậm rãi gõ tay lên mặt ghế:<br>
+
+“Đáp trả có nghĩa là chiến tranh. Một nữ vương non trẻ như người, liệu có đủ bản lĩnh giữ ngai vàng lẫn máu dân mình?”<br><br>
+
+Yue nhướng mày, tay nhẹ gõ lên mặt bàn:<br>
+
+“Không phải máu dân… mà là máu kẻ địch ta muốn giữ. Máu dân ta – không được đổ vô nghĩa chỉ vì Hội đồng sợ động chạm đến Thần tộc.”<br><br>
+
+Một vị quý tộc già, thân tín của dòng Lilth, trầm giọng:<br>
+
+“Điện hạ, nếu cần phiếu thuận, hãy chứng minh rằng Người có thể gánh vác chiến tranh.”<br><br>
+
+Yue tiến thêm một bước. Cô không nhanh không chậm – chỉ rút từ bên hông một mảnh vải. Mảnh vải đẫm máu, là của một lính trinh sát Huyết tộc vừa hy sinh vì trúng phép ám sát từ quân Thần tộc.<br>
+
+“Đây là cái giá cho sự chần chừ. Tôi không cầu xin Hội đồng, tôi chỉ… **thông báo** rằng Huyết Nguyệt Công chúa, hiện là Nữ Vương hợp pháp, sẽ hành động vì dân mình. Ai đi cùng tôi – sẽ cùng chia ngai vàng này. Ai cản tôi – hãy chắc mình sẵn sàng liếm máu trên lưỡi đao của tôi.”<br><br>
+
+Cả đại điện lặng như tờ.
+
+Lystra bước ra, ánh mắt sắc lẹm:<br>
+
+“Tôi – Isolde Dravira Lystia thuộc gia tộc Isolde- thay mặt Nhánh Tây, ủng hộ.”
+Yue nhẹ chống cằm, nghiêng người, buông một câu nhàn nhạt, cười nhạt:
+“Có ai muốn thử ngăn ta không?”<br><br>
+
+Một quý tộc thứ hai gật đầu:<br>
+“Gia tộc Veylanth - ủng hộ.”<br>
+Một giọng khác khẽ chen vào, run rẩy:<br>
+“Gia tộc Dravencrest … ủng hộ.”<br>
+" Gia tộc Morgrave ...Ashenv......"<br><br>
+
+Thêm một người, rồi hai người nữa. Dưới ánh mắt băng giá của Yue, Hội đồng dần ngả theo.
+
+Chỉ còn ba phiếu cuối. Kaelen bước đến đưa bản đồ:<br>
+
+“Nếu có sự chấp thuận, đêm nay, tuyến phòng ngự sẽ được bố trí theo trục bán nguyệt quanh Đồi Augran. Chúng ta sẽ không cho Thần tộc một bước vào lãnh thổ.”<br><br>
+
+Yue quay đầu, ánh mắt chốt vào vị lão quý tộc cuối cùng – người từng là cố vấn thân tín của Nữ hoàng quá cố - cũng tức bà ngoại cô, vốn coi thường Lilth và ghét cả dòng máu lai của Yue.<br>
+
+Ông ta im lặng, rồi chậm rãi gật đầu.<br>
+
+Phiếu thuận cuối cùng – ngọn lửa chính thức bén vào gió.<br>
+
+Yue xoay người, bước về phía ngai vàng, đôi mắt lặng thinh quét qua toàn bộ Hội đồng:<br>
+
+“Tốt. Vậy thì – bắt đầu đi. Hãy để Thần tộc biết... ngai vàng này không phải thứ ai cũng có thể chạm vào mà không đổ máu.” 
+    </p>
+   <div class="chapter-navigation">
+  <a href="chap12.html">⬅️ Chương trước</a>
+  <a href="../index.html">🏠 Trang chủ</a>
+  <a href="chap14.html">➡️ Chương tiếp theo</a>
+   </div>
+    <footer>
+      &copy; 2025 Tác Giả Hoàng Nguyệt Ly. Truyện được chia sẻ miễn phí.
+    </footer>
+  </div>
+</body>
+</html>
